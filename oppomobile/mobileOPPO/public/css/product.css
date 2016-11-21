@@ -1,0 +1,260 @@
+.productWrap{
+    width: 100%;
+    background-color: #f4f4f4;
+}
+.proMainWrap{
+    width: 94%;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+}
+h1{
+    font-size: 0.2rem;
+    margin:0.1rem 0;
+}
+.proMainWrap>p{
+    font-size: 0.15rem;
+    margin:0.1rem 0;
+    color:#878787;
+}
+.proMainWrap>img{
+    width: 100%;
+}
+.showSingle{
+    width: 90%;
+    height: 0.8rem;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    overflow: hidden;
+}
+.preArrow-w{
+    display: inline-block;
+    width: 0.22rem;
+    height: 0.56rem;
+    background-image: url("../images/product-carousel-button.png");
+    background-size: 200%;
+    background-position: 0 -0.56rem;
+    align-self:center;
+}
+.nextArrow-w{
+    display: inline-block;
+    width: 0.22rem;
+    height: 0.56rem;
+    background-image: url("../images/product-carousel-button.png");
+    background-size: 200%;
+    background-position: -0.22rem -0.56rem;
+    align-self:center;
+}
+.preArrow-g{
+    display: inline-block;
+    width: 0.22rem;
+    height: 0.56rem;
+    background-image: url("../images/product-carousel-button.png");
+    background-size: 200%;
+    align-self:center;
+}
+.nextArrow-g{
+    display: inline-block;
+    width: 0.22rem;
+    height: 0.56rem;
+    background-image: url("../images/product-carousel-button.png");
+    background-size: 200%;
+    background-position: -0.22rem 0;
+    align-self:center;
+}
+.showSingle ul{
+    width:84%;
+    height:100%;
+    display: flex;
+    justify-content:space-around;
+}
+.showSingle ul li{
+    list-style: none;
+    display: inline-block;
+    width: 0.8rem;
+    height:0.78rem;
+    border-radius: 50%;
+    border:0.01rem solid grey;
+    display: flex;
+    justify-content:center;
+}
+.checkSmallImg{
+    border:0.01rem solid #5bbf90 !important;
+}
+.showSingle ul li>img{
+    width: 80%;
+    height: 80%;
+    align-self:center;
+}
+.proMainWrap>span{
+    font-size: 0.2rem;
+    color:red;
+    font-weight: 600;
+    line-height: 0.25rem;
+    margin:0.15rem 0;
+}
+.detail{
+    width: 100%;
+    display: flex;
+}
+.detail>p{
+    width: 12%;
+    line-height: 0.2rem;
+    font-size: 0.14rem;
+    margin-top: 0.1rem;
+}
+.detail>ul{
+    width: 85%;
+    display: flex;
+    font-size: 0.14rem;
+    flex-wrap:wrap;
+    margin-bottom: 0.2rem;
+}
+.detail>ul li{
+    list-style: none;
+    width: 1.3rem;
+    height: 0.3rem;
+    display: flex;
+    justify-content:center;
+    margin:0.06rem 0.06rem;
+    background-color: white;
+}
+.detail>ul li p{
+    margin-right: 0.06rem;
+    align-self:center;
+}
+.detail>ul>p{
+    line-height: 0.2rem;
+    margin:0.1rem 0.1rem;
+}
+.noChoose{
+    border:0.02rem solid #e2e2e2;
+    border-radius: 0.02rem;
+}
+.choose{
+    border:0.02rem solid #2aad6f;
+    border-radius: 0.02rem;
+}
+.bankService{
+    width: 100%;
+    display: flex;
+    border-top: 0.015rem dashed black;
+}
+.bankService>p{
+    width: 12%;
+    line-height: 0.2rem;
+    font-size: 0.14rem;
+    margin-top: 0.05rem;
+    padding-top: 0.22rem;
+}
+.bankService>span{
+    line-height: 0.3rem;
+    font-size: 0.14rem;
+    background-color:#ff3300;
+    padding:0 0.08rem;
+    margin-top: 0.22rem;
+    margin-bottom: 0.22rem;
+    color: white;
+}
+
+
+.shoppingCar{
+    width: 99%;
+    height: 1rem;
+    border:0.02rem solid #f0f0f0;
+    background-color: white;
+    margin:auto;
+    display: flex;
+    flex-direction:column;
+}
+.carNum{
+    width: 2.85rem;
+    height: 0.3rem;
+    border:0.02rem solid #f0f0f0;
+    margin:0.2rem auto 0.05rem auto;
+    border-radius: 0.02rem;
+    display: flex;
+    justify-content:space-between;
+}
+.carNum>p{
+    font-size: 0.15rem;
+    align-self:center;
+}
+.carNum input[type="button"]{
+    width:0.4rem;
+    height: 100%;
+    border-radius: 0.02rem;
+    outline:0;
+    background-color: white;
+    font-size: 0.15rem;
+    border:0;
+}
+.carNum input[type="button"]:active{
+    background-color: #f0f0f0;
+}
+.shoppingCar>button{
+    width: 2.93rem;
+    height: 0.5rem;
+    outline: 0;
+    border:0;
+    border-radius: 0.03rem;
+    margin:0.23rem auto;
+}
+.addCar{
+    background-color: #d4eee1;
+    font-size: 0.17rem;
+    color:#1f8657;
+    font-weight: 600;
+}
+.buy{
+    background-color: #fb5e5e;
+    font-size: 0.17rem;
+    color:#fff;
+    font-weight: 600;
+}
+.proDetail{
+    width: 100%;
+    margin-top: 0.6rem;
+    background-color: #f2f2f2;
+}
+.proDetail>ul{
+    width: 100%;
+    height: 0.5rem;
+    background-color: white;
+    border-bottom: 0.05rem solid #f6f6f6;
+    display: flex;
+}
+.proDetail>ul>li{
+    display: inline-block;
+    list-style: none;
+    font-size: 0.15rem;
+    width: 0.67rem;
+    height: 0.35rem;
+    border-bottom: 0.05rem solid #f6f6f6;
+    padding-top:0.15rem;
+    padding-left:0.08rem;
+}
+.proDetail>ul>li:first-child{
+    margin-left:0.15rem;
+}
+.lookAt{
+    background-color: #409f73;
+    color:white;
+    font-weight: 600;
+    border-bottom: 0.05rem solid #b3d9c7 !important;
+}
+.commDetail{
+    overflow: hidden;
+    width: 100%;
+}
+.commDetail img{
+    width: 100%;
+}
+.commParams{
+    overflow: hidden;
+    width: 100%;
+}
+.commParams img{
+    width: 100%;
+}

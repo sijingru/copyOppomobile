@@ -1,0 +1,14 @@
+<div class="regWrap" >
+    <p class="regTip" >注册OPPO账号</p>    
+    <input class="regUsername" ng-model="username" type="text" placeholder='请输入手机号码' />
+    <input class="regPassword" ng-model="password" type="password" placeholder='请输入账号密码' />
+    <input class="check" type="text" placeholder="请输入验证码"  />
+    <span class="auth_code" >
+        <canvas ng-click="newCanvas()" id="canvas" ></canvas>
+    </span>
+    <br />
+    <div class="checkbox" >
+            <input  type="checkbox" />已阅读并同意《<a href="javascript:void(0)">OPPO账号注册协议</a>》
+    </div>
+    <input ng-click="nowreg()" class="nowreg" type="button" value="立即注册" />
+</div>

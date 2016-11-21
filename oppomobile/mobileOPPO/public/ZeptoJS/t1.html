@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #d2{
+            width: 200px;
+            height: 200px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div id="d1"></div>
+<div id="d2"></div>
+<input id="btn" type="button" value="add"/>
+
+</body>
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.js"></script>
+<script>
+    $(function(){
+        $("#btn").click(function(){
+            $("#d1").append("<p>hello!</p>");
+            console.log("OK");
+        });
+        $("#btn").tap(function(){
+            console.log("触发tap事件");
+        });
+        $("#d2").swipe(function(){
+            console.log("触发swipe事件");
+        });
+    })
+</script>
+</html>

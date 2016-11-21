@@ -1,0 +1,20 @@
+<div class="mallWrap" >
+    <div class="wrap">
+        <img id="showImg" ng-src="{{ data.imgSrc }}" >
+        <ul class="btns">
+            <li ng-mouseenter="stop($index)" ng-mouseleave="go()" ng-repeat="item in data.imgsSrc" class="{{ item.selected ? 'selected' : '' }}"></li>
+        </ul>
+    </div>
+    <div class="commodityWrap" >
+        <div ng-repeat="item in series" ng-click="tocomm(item._id)" class="singleComm" >
+            <div ng-show="{{item.commSeller}}==1?false:true" class="hotTag" >
+                <img src="images/ribbon-icon-new.png"  />
+            </div>
+            <div class="commImg" >
+                <img ng-src="http://192.168.1.102:3000{{item.url}}" />
+            </div>
+            <p>{{item.commName}} {{item.commAdv2}}</p>
+            <span><p>￥{{item.commPrice}}</p></span>
+        </div>
+    </div>
+</div>

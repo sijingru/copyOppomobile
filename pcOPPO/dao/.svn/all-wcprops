@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/oppo/!svn/ver/47/pcApp/dao
+END
+database.js
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/oppo/!svn/ver/1/pcApp/dao/database.js
+END
+EmpDAO.js
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/oppo/!svn/ver/1/pcApp/dao/EmpDAO.js
+END
+SerDAO.js
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/oppo/!svn/ver/21/pcApp/dao/SerDAO.js
+END
+CommDAO.js
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/oppo/!svn/ver/47/pcApp/dao/CommDAO.js
+END
+OrderDAO.js
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/oppo/!svn/ver/41/pcApp/dao/OrderDAO.js
+END
+UserDAO.js
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/oppo/!svn/ver/20/pcApp/dao/UserDAO.js
+END

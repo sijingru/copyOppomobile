@@ -1,0 +1,61 @@
+<div class="productWrap">
+    <div class="proMainWrap">
+        <h1>{{singleComm.commAdv}}</h1>
+        <p>{{singleComm.commAdv2}}</p>
+        <img ng-src="http://192.168.1.102:3000{{singleImg[0].url}}" >
+        <div class="showSingle">
+            <i class="preArrow-w"></i>
+            <ul>
+                <li><img ng-src="http://192.168.1.102:3000{{singleImg[1].url}}"></li>
+                <li><img ng-src="http://192.168.1.102:3000{{singleImg[2].url}}"></li>
+            </ul>
+            <i class="nextArrow-g"></i>
+        </div>
+        <span>￥&nbsp;{{singleComm.commPrice}}</span>
+        <div class="detail">
+            <p>网络</p>
+            <ul >
+                <li ng-repeat="x in singleComm.commNet" ng-click="commNet(x)" class="{{Net == x?'choose':'noChoose'}}"><p>{{x}}</p></li>
+            </ul>
+        </div>
+        <div class="detail">
+            <p>颜色</p>
+            <ul >
+                <li ng-repeat="x in singleComm.commColor" ng-click="commColor(x)" class="{{Color==x?'choose':'noChoose'}}"><p>{{x}}</p></li>
+            </ul>
+        </div>
+        <div class="detail">
+            <p>容量</p>
+            <ul>
+                <ul >
+                <li ng-repeat="x in singleComm.commCont" ng-click="commCont(x)" class="{{Cont==x?'choose':'noChoose'}}"><p>{{x}}</p></li>
+            </ul>
+            </ul>
+        </div>
+        <div class="detail">
+            <p>服务</p>
+            <ul>
+                <li ng-repeat="x in singleComm.commService" ng-click="commService(x)" class="{{Service==x?'choose':'noChoose'}}"><p>{{x}}</p></li>              
+                <p>购买保险服务表示您已同意《OPPO保障服务条款》</p>
+            </ul>
+        </div>      
+        <div class="bankService">
+            <p>分期</p><span>订单满600可使用花呗分期3/6期免息</span>
+        </div>
+        <div class="shoppingCar">
+            <!-- <div class="carNum">
+                <input type="button" value="-"> <p>1 </p><input type="button" value="+">
+            </div> -->
+            <!-- <button class="addCar">加入购物车</button> -->
+            <button ng-click="nowBuy()" class="buy">立即购买</button>
+        </div>
+    </div>
+    <div class="proDetail">
+        <ul>
+            <li ui-sref="product.detail" ng-click="detailChoose()" class="{{lookAt==0?'lookAt':' '}}">商品详情</li>
+            <li ui-sref="product.params" ng-click="paramsChoose()" class="{{lookAt==1?'lookAt':' '}}">规格参数</li>
+            <li>用户评价</li>
+        </ul>
+        <div class="product" ui-view ></div>
+    </div>
+</div>

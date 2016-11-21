@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>oppoMobile</title>
+    <script type="text/javascript" src="./angular-1.2.19/angular.min.js"></script>
+    <script type="text/javascript" src="./angular-1.2.19/angular-ui-router.js"></script>
+    <script src="./module/main.js"></script>
+    <script src="./auto-size.js"></script>
+    <script src="./ZeptoJS/zepto.min.js"></script>
+    <script src="./ZeptoJS/touch.js"></script>
+    <script src="./module/login/login.js"></script>
+    <script src="./module/reg/reg.js"></script>
+    <script src="./module/index/index.js"></script>
+    <script src="./module/mall/mall.js"></script>
+    <script src="./module/order/order.js"></script>
+    <script src="./module/product/product.js"></script>
+    <script src="./module/series/series.js"></script>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/reg.css" />
+    <link rel="stylesheet" href="./css/series.css" />
+    <link rel="stylesheet" href="./css/mall.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/order.css" />
+</head>
+<body ng-controller="wrap" >  
+    <header>
+        <div class="nav">
+            <img id="nav-img1" ng-click="showNav()" src="images/nav_03.gif" alt=""/>
+            <img id="nav-img2" src="images/logo.png" alt=""/>
+            <img id="nav-img3" ng-click="showPerson()" src="images/icon-menu-user.png" alt=""/>
+        </div>
+        <div class="nav_list" ng-show='nav == 1 ? true:false' >
+            <ul>
+                <li ng-click="index()" >首页</li>
+                <li ng-click="series()" >产品系列</li>
+                <li ng-click="mall()" >商城</li>
+                <li>体验店</li>
+                <li>服务</li>
+                <li>colorOS</li>
+                <li>社区</li>
+                <li>Global</li>
+            </ul>
+        </div>
+        <div class="nav_right" ng-show='person == 1 ? true:false' >
+            <ul>
+                <li>我的订单</li>
+                <li>配送地址</li>
+                <li>账户信息</li>
+                <li>购物车</li>
+                <li ng-click="login()" >登录</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="content" ui-view ></div>
+
+    <footer>
+        <div class="phone">
+            <p>4001-666-888<br/><span>(24小时全国服务热线)</span></p>
+            <img src="images/icon-online.png"alt="" />
+        </div>
+        <div class="focus">
+            <ul>
+                <li>关注我们：</li>
+                <li><img src="images/copyright_03.gif" id="left-img" alt="" /></li>
+                <li><img src="images/copyright_05.gif" alt="" /></li>
+                <li><img src="images/copyright_07.gif" alt="" /></li>
+            </ul>
+        </div>
+        <div class="foot">
+            <p>&copy;2005-2016东莞市永盛通信科技有限公司 版权所有 粤ICP备08130115号-1 联系方式4001-666-888<br/><img src="images/copyright_13.gif" alt="" /></p>             
+        </div>
+    </footer>   
+</body>
+</html>

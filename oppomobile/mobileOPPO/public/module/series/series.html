@@ -1,0 +1,18 @@
+<div class="seriesWrap" >
+    <div class="headerimg" >
+        <img src="images/201610170810365804becc4bdbd.jpg"  />
+    </div>
+    <div class="seriesnav" >
+        <p ng-repeat="item in commseries" ><a href="#/series#{{item}}">{{item}}</a></p>
+    </div>
+    <div ng-repeat="item in series"  id="{{item.commSeries}}" class="series" >
+        <div  class="seriesImg" >
+            <img  ng-src="http://192.168.1.102:3000{{item.url}}" />
+        </div>
+        <div class="seriesLeft" >
+            <h1>{{item.commName}}</h1>
+            <p>{{item.commAdv}}</p>
+            <button ng-click="more(item._id)" >了解产品 > </button>
+        </div>
+    </div>
+</div>

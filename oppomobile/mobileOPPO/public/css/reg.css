@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.regWrap{
+    padding-left: 0.53rem;
+    width: 2.8rem;
+    margin: 1rem auto;
+}
+.regTip{
+    font-size: 0.13rem;
+    margin-left:0.8rem ;
+}
+.regUsername{
+    display: block;
+    width: 2.2rem;
+    height: 0.3rem;
+    outline: none;
+    border:0.01rem solid gray;
+    padding-left: 0.05rem;
+    margin-top: 0.3rem;
+}
+.regPassword{
+    display: block;
+    width: 2.2rem;
+    height: 0.3rem;
+    outline: none;
+    border:0.01rem solid gray;
+    padding-left: 0.05rem;
+    margin-top: 0.2rem;
+}
+.check{
+    float: left;
+    width: 1.1rem;
+    height: 0.3rem;
+    outline: none;
+    border:0.01rem solid gray;
+    padding-left: 0.05rem;
+    margin-top: 0.2rem;
+}
+.auth_code{
+    float: left;
+    display: block;
+    width: 1rem;
+    height: 0.3rem;
+    margin-top: 0.2rem;
+    margin-left: 0.1rem;
+    margin-bottom: 0.2rem;
+}
+.auth_code canvas{
+    width: 100%;
+    height:100%;
+}
+.checkbox{
+    margin-bottom: 0.2rem;
+    clear: both;
+    display: block;
+}
+.checkbox input{
+    width: 0.1rem;
+    height: 0.1rem;
+}
+.nowreg{
+    width: 2.25rem;
+    height: 0.3rem;
+    background-color: #2aad6f;
+    color: white;
+    outline: none;
+    border-radius:0.02rem;
+    display: block;
+}

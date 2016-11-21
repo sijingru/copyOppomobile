@@ -1,0 +1,42 @@
+<div class="orderAll">
+    <ul class="head">
+        <li>购物车</li>
+        <li>填写清单</li>
+        <li>支付</li>
+    </ul>
+    <div class="peisong">
+        地址：<input ng-model="adress" type="text" />
+    </div>
+    <div class="adress">
+        <input ng-click="newadress()" type="button" value="添加新地址" />
+    </div>
+    <p class="payway">
+        支付方式：
+    </p>
+    <ul class="fapiao">
+        <li>发票</li>
+        <li>*发票抬头：</li>
+        <li><input type="button" value="重新编辑" id="editor"/></li>
+    </ul>
+    <div class="listing">
+    <h5>商品清单:</h5>
+        <ul class="list">
+            <li><img ng-src="http://192.168.1.102:3000{{comminformation.singleImg[0].url}}" /></li>
+            <li class="list2">{{comminformation.singleComm.commAdv}}{{comminformation.singleComm.commAdv2}}<br /><strong>{{comminformation.net}}|{{comminformation.color}}|{{comminformation.cont}}</strong></li>
+            <li><strong>×1</strong></li>
+            <li class="list3"><strong>￥ <br/>{{comminformation.singleComm.commPrice}}</strong></li>
+        </ul>      
+    </div>
+    <div class="orderNum">
+        <ul class="numList">
+            <li><p>商品数量</p><p>1</p></li>
+            <li><p>合计</p><p>{{comminformation.singleComm.commPrice}}</p></li>
+            <li><p>优惠券/码：</p><p>-￥0.00</p></li>
+            <li><p>邮费<span>（全场包邮）</span>：</p><p>+￥0.00</p></li>
+            <li><p>应付金额</p><strong>{{comminformation.singleComm.commPrice}}</strong></li>
+        </ul>
+    </div>
+    <div class="orderfoot">
+    <input ng-click="addorder()" type="button" value="提交订单" id="submit" />
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div>
+    <div class="wrap">
+        <img id="showImg" ng-src="{{ data.imgSrc }}" >
+        <ul class="btns">
+            <li ng-mouseenter="stop($index)" ng-mouseleave="go()" ng-repeat="item in data.imgsSrc" class="{{ item.selected ? 'selected' : '' }}"></li>
+        </ul>
+    </div>
+    <div class="showimg">
+        <img src="images/主页展示2.jpg"  />
+    </div>
+    <div class="showimg">
+        <img src="images/主页展示1.jpg"  />
+    </div>
+    <div class="showimg">
+        <img src="images/主页展示3.jpg"  />
+    </div>
+</div>

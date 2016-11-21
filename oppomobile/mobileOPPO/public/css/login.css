@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.loginWrap{
+    padding-left: 0.53rem;
+    width: 2.8rem;
+    /*height: rem;*/
+    margin: 1rem auto;
+}
+.loginTip{
+    font-size: 0.13rem;
+    margin-left:0.3rem ;
+}
+.username{
+    display: block;
+    width: 2.2rem;
+    height: 0.3rem;
+    outline: none;
+    border:0.01rem solid gray;
+    padding-left: 0.05rem;
+    margin-top: 0.3rem;
+}
+.password{
+    display: block;
+    width: 2.2rem;
+    height: 0.3rem;
+    outline: none;
+    border:0.01rem solid gray;
+    padding-left: 0.05rem;
+    margin-top: 0.1rem;
+}
+.biaoqian{
+    display: block;
+    margin-left: 1.2rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.15rem;
+}
+.login{
+    width: 2.25rem;
+    height: 0.3rem;
+    background-color: #2aad6f;
+    color: white;
+    outline: none;
+    /*border:0.02rem solid gray;*/
+    border-radius:0.02rem;
+    display: block;
+}
+.reg{
+    width: 2.25rem;
+    height: 0.3rem;
+    background-color: #fff;
+    color: gray;
+    outline: none;
+    border-radius: 0.02rem;
+    /*border:0.02rem solid gray;*/
+    display: block;
+    margin-top: 0.1rem;
+}
+.icon_title{
+    margin-top: 0.2rem;
+    width: 2.2rem;
+}
+.icon_title img{
+    width: 100%;
+}
+.icon_media{
+    width: 2.2rem;
+    /*height: 0.3rem;*/
+    display: flex;
+    justify-content:space-around;
+}
+.icon_media img{
+    display: block;
+    width: 0.3rem;
+    height: 0.3rem;
+}

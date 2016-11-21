@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.head-top{
+    width: 100%;
+    background: #0b8043;
+    height: 0.48rem;
+}
+.head-top ul li{
+    float: left;
+    width: 0.24rem;
+    height: 0.26rem;
+}
+.head-top ul li img{
+    width: 0.24rem;
+    height: 0.26rem;
+}

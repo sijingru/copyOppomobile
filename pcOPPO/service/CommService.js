@@ -1,0 +1,114 @@
+var CommDAO = require('../dao/CommDAO.js');
+
+module.exports.addComm = function(commodity, callback) {
+    CommDAO.addComm(commodity, function(data) {
+        callback(data)
+    })
+}
+
+module.exports.addCommImgs = function(commodityImgs,callback){
+    CommDAO.addCommImgs(commodityImgs,function(data){
+        callback(data)
+    })
+}
+module.exports.changeComm = function(data,callback){
+    CommDAO.changeComm(data,function(data){
+        if(data){
+            callback(true);
+        }
+        else{callback(false);}
+    })
+}
+
+module.exports.getCommImgs = function(commodityImgs,callback){
+    CommDAO.getCommImgs(commodityImgs,function(data){
+        callback(data)
+    })
+}
+module.exports.getCommImgsByType = function(imgType,callback){
+    CommDAO.getCommImgsByType(imgType,function(data){
+        callback(data)
+    })
+}
+module.exports.getcommDetail = function(commId,imgType,callback){
+    CommDAO.getcommDetail(commId,imgType,function(data){
+        callback(data)
+    })
+}
+module.exports.getAllCommImgs = function(_id,callback){
+    CommDAO.getAllCommImgs(_id,function(data){
+        callback(data)
+    })
+}
+
+module.exports.getCommByUsername = function(username,callback){
+    CommDAO.getCommByUsername(username,function(data){
+        callback(data)
+    })
+}
+module.exports.getAllComm = function(callback){
+    CommDAO.getAllComm(function(data){
+        callback(data)
+    })
+}
+module.exports.delComm = function(_id,callback){
+    CommDAO.delComm(_id,function(data){
+        if(data){
+            callback('true')
+        }
+        else{
+            callback("false")
+        }
+    })
+}
+module.exports.delCommImg = function(_id,callback){
+    CommDAO.delCommImg(_id,function(data){
+        if(data){
+            callback('true')
+        }
+        else{
+            callback("false")
+        }
+    })
+}
+module.exports.getCommColorImgs = function(commodityImgs,callback){
+    CommDAO.getCommColorImgs(commodityImgs,function(data){
+        callback(data)
+    })
+}
+
+// getSingleComm接口用商品名获取单独的商品信息
+module.exports.getSingleComm = function(commName, callback) {
+    CommDAO.getSingleComm(commName, function(data) {
+        callback(data)
+    })
+}
+module.exports.getCommById = function(commId, callback) {
+    CommDAO.getCommById(commId, function(data) {
+        callback(data)
+    })
+}
+module.exports.getCommIdImgs = function(commId,imgColor, callback) {
+    CommDAO.getCommIdImgs(commId,imgColor, function(data) {
+        callback(data)
+    })
+}
+
+// getCommBySeries接口用于获取商品系列数据
+// module.exports.getCommBySeries = function(curPage, eachPage, callback) {
+//     CommDAO.getCommBySeries(curPage, eachPage, function(data) {
+//         callback(data)
+//     })
+// }
+
+// module.exports.getCommodityImgsByPage = function(commId, callback) {
+//     CommDAO.getCommodityImgsByPage(commId, function(data) {
+//         callback(data)
+//     })
+// }
+
+module.exports.getAddCommID = function(_id, callback) {
+    CommDAO.getAddCommID(_id, function(data) {
+        callback(data)
+    })
+}

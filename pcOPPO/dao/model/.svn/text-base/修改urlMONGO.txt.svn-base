@@ -1,0 +1,12 @@
+db.commodityImgs.find({}).map((it)=> { 
+   
+
+    for (var item in it){
+        if(item=="url"){
+            it["url"]="http://127.0.0.1:3000"+it["url"];
+        }
+    }
+
+      
+      return it;
+});
